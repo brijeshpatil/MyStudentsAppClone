@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace StudentWebApp.MyERP
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class GivenExams : System.Web.UI.Page
     {
         PService PS = new PService();
 
