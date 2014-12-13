@@ -1,0 +1,5 @@
+D:\brijesh\Brijesh\Brijesh\StudentWebApp\StudentWebApp\obj\Debug\StudentWebApp.csprojResolveAssemblyReference.cache
+D:\brijesh\Brijesh\Brijesh\StudentWebApp\StudentWebApp\bin\StudentWebApp.dll
+D:\brijesh\Brijesh\Brijesh\StudentWebApp\StudentWebApp\bin\StudentWebApp.pdb
+D:\brijesh\Brijesh\Brijesh\StudentWebApp\StudentWebApp\obj\Debug\StudentWebApp.dll
+D:\brijesh\Brijesh\Brijesh\StudentWebApp\StudentWebApp\obj\Debug\StudentWebApp.pdb

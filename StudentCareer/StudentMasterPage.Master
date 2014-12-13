@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentMasterPage.master.cs" Inherits="StudentWebApp.StudentCareer.StudentMasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check your skill</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body {
+            background: #F4F4F4;
+            margin: 0;
+        }
+
+        #container {
+            width: 90%;
+            margin: 0 auto;
+            background: #FFFFFF;
+        }
+
+        #header {
+            padding: 45px 0 20px 40px;
+        }
+
+            #header a {
+                color: #121212;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: "Myriad Pro", "Arial Narrow";
+            }
+
+        #menu {
+            background-color: #3b7687;
+            padding: 6px 0 6px 40px;
+        }
+
+            #menu a {
+                color: #c5d6db;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: "Arial Narrow", "Myriad Pro";
+            }
+
+                #menu a:hover {
+                    color: #ecf2f3;
+                }
+
+        #sidebar {
+            float: left;
+            width: 120px;
+            padding: 30px 0 0 40px;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0px;
+            color: #869843;
+            font-size: 24px;
+            font-family: "Arial Narrow", "Myriad Pro";
+            font-weight: normal;
+        }
+
+        h2 {
+            color: #3b7687;
+            font-size: 15px;
+            margin: 20px 0 5px 0;
+        }
+
+        #main {
+            margin: 0 0 0 180px;
+            padding: 35px 40px 30px 0;
+            color: #444444;
+            font-family: "Georgia";
+            font-size: 13px;
+            line-height: 18px;
+            text-align: justify;
+            min-height: 500px;
+        }
+
+            #main a {
+                color: #3b7687;
+                text-decoration: none;
+            }
+
+                #main a:hover {
+                    color: #444444;
+                }
+
+        #footer {
+            padding: 6px 40px 6px 40px;
+            background: #d6d6d6;
+            font-family: "Lucida Sans Unicode";
+            color: #444444;
+            font-size: 11px;
+            text-align: right;
+        }
+
+            #footer a {
+                text-decoration: none;
+                color: #262626;
+            }
+
+                #footer a:hover {
+                    color: #666666;
+                }
+
+        .separator {
+            font-size: 11px;
+            color: #FFFFFF;
+        }
+        #lnkLogout {
+            font-weight:bold;
+
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frm1" runat="server">
+        <div id="container">
+            <div id="header"><a href="StudentHome.aspx">Student Assessment</a> </div>
+            <div id="menu"><a href="StudentHome.aspx">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="SelectExam.aspx">Exams</a>
+                <div style="float:right; margin-right:10px; color:white;">
+                    <asp:Label ID="lblStudentNamne" runat="server" Text=""></asp:Label>&nbsp;&nbsp;
+                    <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click" OnClientClick="return confirm('Are you sure to Logout??');">Logout</asp:LinkButton>
+                </div>
+
+            </div>
+            <div id="sidebar">
+                <h1></h1>
+            </div>
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">&copy;2014 Keep smiling &nbsp;<span class="separator">|</span>&nbsp; Design by <a href="#">Brijesh Patil</a> </div>
+        </div>
+
+    </form>
+</body>
+</html>
