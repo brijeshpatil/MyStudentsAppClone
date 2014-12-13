@@ -165,5 +165,14 @@ namespace StudentWebApp
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        public DataTable GivenExams()
+        {
+            da = new SqlDataAdapter("GivenExams", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
